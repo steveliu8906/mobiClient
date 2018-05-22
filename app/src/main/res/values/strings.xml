@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartSystem</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="password">密    码</string>
+    <string name="username">用户名</string>
+    <string name="login_string">登录</string>
+    <string name="quit_string">退出</string>
+    <string name="watch_TV">遥控器</string>
+    <string name="store_string">保存用户名和密码</string>
+	<string name="power">主机电源</string>
+	<string name="silence">静音</string>
+	<string name="menu">菜单</string>
+	<string name="back">返回</string>
+	<string name="OK">OK</string>
+	<string name="up">⇧</string>
+	<string name="down">⇩</string>
+	<string name="left">⇦</string>
+	<string name="right">⇨</string>
+	
+</resources>

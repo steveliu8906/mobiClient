@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1024dp" >
+
+        <Button
+            android:id="@+id/up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ok_button"
+            android:layout_alignLeft="@+id/ok_button"
+            android:layout_marginBottom="70dp"
+            android:text="@string/up" />
+
+        <Button
+            android:id="@+id/down_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ok_button"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@+id/left_button"
+            android:text="@string/down" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/silence_button"
+            android:layout_below="@+id/down_button"
+            android:layout_marginTop="75dp"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/back_button"
+            android:layout_alignRight="@+id/power_button"
+            android:text="@string/menu" />
+
+        <Button
+            android:id="@+id/silence_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/power_button"
+            android:layout_alignBottom="@+id/power_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="31dp"
+            android:text="@string/silence" />
+
+        <Button
+            android:id="@+id/right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/down_button"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/down_button"
+            android:text="@string/right" />
+
+        <Button
+            android:id="@+id/left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/down_button"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/ok_button"
+            android:text="@string/left" />
+
+        <Button
+            android:id="@+id/power_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="56dp"
+            android:text="@string/power" />
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/power_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="313dp"
+            android:text="@string/OK" />
+
+    </RelativeLayout>
+
+</ScrollView>
