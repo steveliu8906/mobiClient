@@ -42,7 +42,7 @@ public class WatchTVControler extends Activity implements OnClickListener{
 			0x3b
 	};
 	
-	public List<ButtonItem> buttonList = new LinkedList<ButtonItem>();	//�½�����
+	public List<ButtonItem> buttonList = new LinkedList<ButtonItem>();
 	
 	public void buttonInit()
 	{			

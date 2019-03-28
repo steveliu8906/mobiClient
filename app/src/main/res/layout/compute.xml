@@ -5,21 +5,21 @@
 
 
     <Button
-        android:id="@+id/outsideDoorButton"
+        android:id="@+id/PowerPCButton"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:text="@string/outsidedoor"
-        android:layout_below="@+id/insideDoorButton"
+        android:text="@string/str_Desktop"
+        android:layout_below="@+id/miniPCButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="136dp" />
 
     <Button
-        android:id="@+id/insideDoorButton"
+        android:id="@+id/miniPCButton"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:text="@string/insidedoor"
+        android:text="@string/str_xinchuanyun"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/outsideDoorButton"
-        android:layout_alignStart="@+id/outsideDoorButton"
+        android:layout_alignLeft="@+id/PowerPCButton"
+        android:layout_alignStart="@+id/PowerPCButton"
         android:layout_marginTop="66dp" />
 </RelativeLayout>

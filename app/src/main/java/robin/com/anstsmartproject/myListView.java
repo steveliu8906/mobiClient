@@ -13,47 +13,37 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class myListView extends  Activity {
-	
-	
+
 		private int back_times = 0;
-
-
-		private void hide_status()
-		{
-			 /*全屏显示 隐藏标题栏 隐藏导航栏 沉浸模式*/
-			View decorView = getWindow().getDecorView();
-			int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
-					View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_FULLSCREEN;
-			decorView.setSystemUiVisibility(uiOptions);
-
-		}
-
-
 
 		@Override
 		protected void onCreate(Bundle savedInstanceState) {
 			// TODO Auto-generated method stub
-			super.onCreate(savedInstanceState);	
-			//this.getWindow().setBackgroundDrawableResource(R.drawable.my_backup);
-			hide_status();
+			super.onCreate(savedInstanceState);
+            windowHide.hide_status(getWindow().getDecorView());
 			setContentView(R.layout.choose_action);
 			
 			ListView myListView = (ListView) findViewById(R.id.ListView);
-			
 			BaseAdapter cartAdapter = new MyAdapter(this,globalsocket.orderList);
-			
 			myListView.setAdapter(cartAdapter);
+
+			final String  itemActionIntent[]={
+					"robin.com.anstsmartproject.WatchTVControler",
+					"robin.com.anstsmartproject.doorActivity",
+                    "robin.misc.computeActivity",
+					"robin.misc.LightActivity",
+					"robin.com.anstsmartproject.AddUserActivity",
+			};
 			
 			myListView.setOnItemClickListener(new OnItemClickListener() {
 	            @Override
 	            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-	            	back_times = 0;
-	            	if(i == 0){
-	            		
-						String action = "robin.com.anstsmartproject.WatchTVControler";
+	            		back_times = 0;
+						if(i >(itemActionIntent.length+1))
+							return;
+						String action = itemActionIntent[i];
 						Intent intent = new Intent(action);
 						startActivity(intent);
-					}
 	            }
 	        });
 			
@@ -61,8 +51,8 @@ public class myListView extends  Activity {
 
 		@Override
 		public void onResume() {
-			   super.onResume();
-				hide_status();
+            super.onResume();
+            windowHide.hide_status(getWindow().getDecorView());
 		}
 
 

@@ -31,16 +31,6 @@
         </activity>
 
         <activity
-            android:name="robin.com.anstsmartproject.ChooseActivity"
-            >
-            <intent-filter>
-                <action android:name="robin.com.anstsmartproject.ChooseActivity" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity
             android:name="robin.com.anstsmartproject.WatchTVControler"
             >
             <intent-filter>
@@ -49,6 +39,50 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="robin.com.anstsmartproject.AddUserActivity"
+            >
+            <intent-filter>
+                <action android:name="robin.com.anstsmartproject.AddUserActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="robin.com.anstsmartproject.doorActivity"
+            >
+            <intent-filter>
+                <action android:name="robin.com.anstsmartproject.doorActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="robin.misc.LightActivity"
+            >
+            <intent-filter>
+                <action android:name="robin.misc.LightActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="robin.misc.computeActivity"
+            >
+            <intent-filter>
+                <action android:name="robin.misc.computeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+
     </application>
 
 </manifest>

@@ -48,7 +48,7 @@ public class MyAdapter extends BaseAdapter{
 		/*final int nowPosition = position;
 		
 		if (view == null) {
-			view = layoutInflater.inflate(R.layout.dishes_list, null);
+			view = layoutInflater.inflate(R.add_user.dishes_list, null);
 			viewHolder =  new ViewHolder();
 			viewHolder.tv_dish_name =  (TextView)view.findViewById(R.id.tv_dish_name);
 			viewHolder.tv_dish_price =  (TextView)view.findViewById(R.id.tv_dish_price);

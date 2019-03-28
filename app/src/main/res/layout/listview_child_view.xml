@@ -21,7 +21,7 @@
                 android:id="@+id/picture_imageView"
                 android:layout_width="172dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/p1" />
+                android:src="@drawable/tv" />
 
             <TextView
                 android:id="@+id/watch_TV_textView"
